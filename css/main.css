@@ -21,6 +21,10 @@ a {
     max-width: 1300px;
     margin: 0 auto;
 }
+.heading {
+    font-size: 45px;
+    font-weight: 700;
+}
 /*Перша секція*/
 .header {
     background-color: #2A1A5E;
@@ -102,7 +106,7 @@ a {
     line-height: 1.35em;
 }
 .offer_text p {
-    font-size: 24px;
+    font-size: 23px;
     padding-top: 30px;
     padding-bottom: 90px;
     width: 586px;
@@ -112,8 +116,7 @@ a {
     max-width: 50%;
 }
 .offer_hero img {
-    width: 520px;
-    height: 610px;
+    height: 600px;
     text-align: center;
 }
 
@@ -124,11 +127,124 @@ a {
     margin-top: 90px;
 }
 .right_box h2 {
-    font-size: 45px;
-    font-weight: 700;
     text-align: center;
 }
 .left_box .left_text,
 .right_box .right_text {
     height: 560px;
+}
+/*Третя секція*/
+.tornament {
+    padding-top: 90px;
+}
+.tornament_items {
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+    border:#909090 1px dotted;
+    width: 410px;
+    border-radius: 25px;
+    text-align: center;
+    padding: 15px 10px;
+}
+.item h3 {
+    font-size: 23px;
+    font-weight: 700;
+    padding-top: 50px;
+    padding-bottom: 25px;
+    line-height: 1.25em;
+}
+.item p {
+    font-size: 18px;
+    color: #F24080;
+    width: 374px;
+    line-height: 1.30em;
+}
+.tornament .btn {
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/*Четверта секція*/
+.faq {
+    position: relative;
+}
+.faq h2 {
+    text-align: center;
+    padding-bottom: 90px;
+}
+.faq h2::before {
+    content: url("../assets/vawe.png");
+    display: block;
+    position: absolute; 
+    top: -30px;
+    left: 41%;
+    width: 230px;
+}
+/*Акордеон*/
+.acor-container {
+    max-width: 860px;
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+.acor-container .acor-body {
+    margin: 0 auto;
+    border-radius:15px;
+    height: 0;
+    color: rgba(0, 0, 0, 0);
+    background-color: #8d8d8d;
+    line-height: 18px;
+    padding: 0 30px;
+    box-sizing: border-box;
+    transition: color 0.5s, padding 0.5s;
+    overflow: hidden;
+    font-family: Verdana, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
+}
+.acor-container .acor-body p {
+    margin: 0 0 10px;
+}
+.acor-container label {
+    cursor: pointer;
+    border-radius: 15px;
+    background-color: #F0EEEE;
+    display: block;
+    padding: 15px 20px;
+    width: 100%;
+    color: #2A1A5E;
+    font-weight: 300;
+    box-sizing: border-box;
+    z-index: 100;
+    font-family: Verdana, sans-serif;  
+    font-size: 18px;
+    margin: 0 0 5px;
+    transition: color .35s;
+}
+.acor-container label:hover {
+    color: #F24080;
+}
+.acor-container input{
+    display: none;
+}
+.acor-container label:before {
+    content: '\276F';
+    float: right;
+}
+.acor-container input:checked + label {
+    background-color: #F0EEEE;
+    color: #2A1A5E;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.4), 0 28px 30px rgba(0,0,0,0.3);
+}
+.acor-container input:checked + label:before {
+    transition: transform .35s;
+    transform: rotate(90deg);
+}
+.acor-container input:checked + label + .acor-body {
+    height: auto;
+    margin-top: -5px;
+    color: #000;
+    padding: 20px 30px 10px;
 }
