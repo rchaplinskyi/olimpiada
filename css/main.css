@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+@import url("reset.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Montserrat", sans-serif;;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #2A1A5E;
+    color: #fff;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+}
+.menu {
+    display: flex;
+    gap: 45px;
+}
+.menu > li > a:hover {
+    color: #F24080;
+    transition: all 0.3s ease;
+}
+.btn {
+    display: block;
+    text-align: center;
+    width: 270px;
+    background-color: #F24080;
+    padding: 20px 0;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.btn:hover {
+    background-color: #961040;
+    transition: all 0.3s ease;
+}
+.offer {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 125px;
+    
+}
+.offer_text {
+    max-width: 50%;
+    position: relative;
+    z-index: 99;
+}
+.circle {
+    position: absolute;
+    width: 242px;
+    height: 240px;
+    left: 460px;
+    top: -80px;
+    background-image: url("../assets/circle.png");
+    z-index: -2;
+}
+.dottet_circle {
+    position: absolute;
+    width: 242px;
+    height: 225px;
+    left: 515px;
+    top: -15px;
+    background-image: url("../assets/dotted-circle.png");
+    z-index: -3;
+}
+.offer_text span {
+    font-size: 42px;
+    font-weight: 900;
+}
+.offer_text span::before {
+    content: url("../assets/vawe.png");
+    display: block;
+    position: absolute; 
+    top: -70px;
+    left: 0;
+    width: 230px;
+}
+.offer_text h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    color: #EEFF2C;
+    font-weight: 900;
+    line-height: 1.35em;
+}
+.offer_text p {
+    font-size: 24px;
+    padding-top: 30px;
+    padding-bottom: 90px;
+    width: 586px;
+    line-height: 1.35em;
+}
+.offer_hero {
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.offer_hero img {
+    width: 520px;
+    height: 610px;
+    text-align: center;
+}
