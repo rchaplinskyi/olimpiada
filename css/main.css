@@ -11,7 +11,8 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    font-family: "Montserrat", sans-serif;;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
 }
 a {
     text-decoration: none;
@@ -64,7 +65,6 @@ a {
     
 }
 .offer_text {
-    max-width: 50%;
     position: relative;
     z-index: 99;
 }
@@ -217,7 +217,6 @@ a {
     font-weight: 300;
     box-sizing: border-box;
     z-index: 100;
-    font-family: Verdana, sans-serif;  
     font-size: 27px;
     font-weight: 700;
     margin: 0 0 5px;
@@ -230,7 +229,9 @@ a {
     display: none;
 }
 .acor-container label:before {
-    content: '\276F';
+    font-family: fontawesome;
+    content: '\f078';
+    font-size: 20px;
     float: right;
 }
 .acor-container input:checked + label {
@@ -240,7 +241,7 @@ a {
 }
 .acor-container input:checked + label:before {
     transition: transform .35s;
-    transform: rotate(90deg);
+    transform: rotate(180deg);
 }
 .acor-container input:checked + label + .acor-body {
     height: auto;
@@ -281,4 +282,375 @@ a {
 .copy {
     margin-top: 150px;
     text-align: center;
+}
+
+/*Адаптив*/
+@media screen and (max-width:1300px) {
+    .container {
+        width: auto;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .offer_text span {
+        font-size: 40px;
+    }
+    .offer_text h1 {
+        font-size: 63px;
+    }
+    .item {
+        width: auto;
+        margin-right: 20px;
+    }
+    .item:last-child {
+        margin-right: 0;
+    }
+    .left_box img,
+    .right_box img {
+        width: auto;
+    }
+}
+@media screen and (max-width:1024px) {
+   body {
+    font-size: 16px;
+   }
+    .offer_text span {
+        font-size: 30px;
+    }
+    .offer_text h1 {
+        font-size: 47px;
+    }
+    .circle {
+        left: 304px;
+        top: -105px;
+    }
+    .dottet_circle {
+        left: 380px;
+        top: -70px;
+    }
+    .offer_text p {
+        font-size: 18px;
+    }
+    .offer_hero img {
+        height: 470px;
+    } 
+    .offer_box {
+        flex-direction: column;
+        align-items: center;
+         gap: 25px;
+    }   
+    .right_box {
+        order: -1;
+    }
+    .heading {
+        text-align: center;
+    }
+    .tornament_items {
+        flex-direction:column;
+        align-items: center;
+        gap:25px;
+    }
+    .item {
+        margin-right: 0;
+    }
+    .item p {
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 980px) {
+    .offer_text span {
+        font-size: 25px;
+    }
+    .offer_text h1 {
+        font-size: 40px;
+    }
+    .offer_hero img {
+        height: 450px;
+    }
+    .offer_text p {
+        width: 500px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .heading {
+        font-size: 40px;
+    }
+    .acor-container label {
+        font-size: 20px;
+    }
+    .footer_about,
+    .footer_info,
+    .footer_adress,
+    .copy {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+    .offer {
+        flex-direction: column;
+        gap: 55px;
+    }
+    .offer_text {
+        width: 100%;
+        text-align: center;
+    }
+    .offer_text span {
+        font-size: 40px;
+    }
+    .offer_text h1 {
+        font-size: 63px;
+    }
+    .offer_text p {
+        width: 100%;
+    }
+    .offer .btn {
+        margin: 0 auto;
+    }
+    .offer_text span::before {
+        top: -50px;
+        left: 31%;
+    }  
+    .offer_hero img {
+        height: 550px;
+    }
+    .faq h2::before {
+        top: -40px;
+        left: 34%;
+    } 
+    .footer_list {
+        flex-wrap: wrap;
+        gap: 25px;
+        align-items: center;
+    }
+
+}
+@media screen and (max-width:680px) {
+    .offer_text span {
+        font-size: 35px;
+    }
+    .offer_text h1 {
+        font-size: 55px;
+    }
+    .dottet_circle {
+        left: 350px;
+    }
+    .offer_hero img {
+        height: 500px;
+    }
+    .heading {
+        font-size: 35px;
+    }
+    .left_box .left_img,
+    .right_box .right_img {
+        width: 450px;
+    }
+    .item h3 {
+        font-size: 20px ;
+    }
+    .item p {
+        font-size: 16px ;
+    }
+    .acor-container label {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:540px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    .nav .btn {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .offer_text span {
+        font-size: 28px;
+    }
+    .offer_text h1 {
+        font-size: 44px;
+    }
+    .offer_text span::before {
+        top: -50px;
+        left: 20%;
+    }
+    .circle {
+        left: 175px;
+    }
+    .dottet_circle {
+        top:-40px;
+        left: 205px;
+    }
+    .offer_hero img {
+        height: 380px;
+    }
+    .faq h2::before {
+        left: 28%;
+    }
+    .acor-container label {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .offer_text span {
+        font-size: 25px;
+    }
+    .offer_text h1 {
+        font-size: 40px;
+    }
+    .offer_text p {
+        font-size: 16px;
+    }
+    .circle {
+        left: 130px;
+    }
+    .dottet_circle {
+        top:-40px;
+        left: 180px;
+    }
+    .offer_hero img {
+        height: 325px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .offer_text span {
+        font-size: 19px;
+    }
+    .offer_text h1 {
+        font-size: 31px;
+    }
+    .offer_text p {
+        font-size: 15px;
+    }
+    .offer_text span::before {
+        left: 8%;
+    }
+    .circle {
+        left: 60px;
+    }
+    .dottet_circle {
+        top:-40px;
+        left: 95px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .faq h2::before {
+        left: 23%;
+    }
+    .acor-container label {
+        font-size: 14px;
+    }
+    .left_box .left_img, 
+    .right_box .right_img {
+        width: 370px;
+    }
+    .offer_hero img {
+        height: 275px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .offer_text span {
+        font-size: 18px;
+    }
+    .offer_text h1 {
+        font-size: 29px;
+    }
+    .offer_text p {
+        font-size: 13px;
+    }
+    .circle {
+        left: 25px;
+    }
+    .dottet_circle {
+        top:-40px;
+        left: 60px;
+    }
+    .heading {
+        font-size: 30px;
+    }
+    .offer_text span::before {
+        top: -50px;
+        left: 8%;
+    }
+    .heading {
+        font-size: 25px;
+    }
+    .item h3 {
+        font-size: 16px;
+    }
+    .item p {
+        font-size: 13px;
+    }
+    .faq h2::before {
+        left: 19%;
+    }
+    .btn {
+        font-size: 12px;
+    }
+    .left_box .left_img, 
+    .right_box .right_img {
+        width: 320px;
+    }
+
+    .footer_about,
+    .footer_info,
+    .footer_adress,
+    .copy {
+        font-size: 12px;
+    }
+    .logo img,
+    .footer_about img {
+        width: 80px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .offer_text span {
+        font-size: 14px;
+    }
+    .offer_text h1 {
+        font-size: 23px;
+    }
+    .offer_text p {
+        font-size: 12px;
+    }
+    .circle {
+        left: 25px;
+    }
+    .dottet_circle {
+        top: -35px;
+        left: 16px;
+    }
+    .heading {
+        font-size: 20px;
+    }
+    .offer_text .btn {
+        width: 100%;
+    }
+    .offer_hero img {
+        height: 200px;
+    }
+    .faq h2::before {
+        left: 14%;
+    }
+    .item img {
+        width: 75px;
+        height: auto;
+    }
+    .item h3 {
+        font-size: 14px;
+    }
+    .item p {
+        font-size: 11px;
+    }
+    .offer_text span::before {
+        left: -2%;
+    }
+    .btn {
+        width: 100%;
+    }
 }
