@@ -179,7 +179,7 @@ a {
     content: url("../assets/vawe.png");
     display: block;
     position: absolute; 
-    top: -30px;
+    top: -40px;
     left: 41%;
     width: 230px;
 }
@@ -194,13 +194,12 @@ a {
     border-radius:15px;
     height: 0;
     color: rgba(0, 0, 0, 0);
-    background-color: #8d8d8d;
+    background-color: #dddbdb;
     line-height: 18px;
     padding: 0 30px;
     box-sizing: border-box;
     transition: color 0.5s, padding 0.5s;
     overflow: hidden;
-    font-family: Verdana, sans-serif;
     font-size: 16px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2), 0 10px 16px rgba(0,0,0,0.2);
 }
@@ -212,14 +211,15 @@ a {
     border-radius: 15px;
     background-color: #F0EEEE;
     display: block;
-    padding: 15px 20px;
+    padding: 20px 25px;
     width: 100%;
     color: #2A1A5E;
     font-weight: 300;
     box-sizing: border-box;
     z-index: 100;
     font-family: Verdana, sans-serif;  
-    font-size: 18px;
+    font-size: 27px;
+    font-weight: 700;
     margin: 0 0 5px;
     transition: color .35s;
 }
@@ -247,4 +247,38 @@ a {
     margin-top: -5px;
     color: #000;
     padding: 20px 30px 10px;
+}
+.faq .btn {
+    margin: 0 auto;
+    margin-bottom: 90px;
+}
+/*Підвал сайту*/
+.footer {
+    background-color: #2A1A5E;
+    color: #fff;
+    font-size: 18px;
+    padding: 75px 0 20px 0;
+}
+.footer_list {
+    display: flex;
+    justify-content: space-between;
+}
+.footer_about {
+    width: 335px;
+}
+.footer_about h4 {
+    line-height: 1.45em;
+    margin: 15px 0;
+}
+.footer_about .social a i {
+    font-size: 25px;
+    padding-right: 20px;
+}
+.footer_adress li,
+.footer_info li {
+    padding: 10px 0;
+}
+.copy {
+    margin-top: 150px;
+    text-align: center;
 }
