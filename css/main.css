@@ -21,6 +21,7 @@ a {
     max-width: 1300px;
     margin: 0 auto;
 }
+/*Перша секція*/
 .header {
     background-color: #2A1A5E;
     color: #fff;
@@ -109,12 +110,25 @@ a {
 }
 .offer_hero {
     max-width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .offer_hero img {
     width: 520px;
     height: 610px;
     text-align: center;
+}
+
+/*Друга секція*/
+.offer_box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.right_box h2 {
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+}
+.left_box .left_text,
+.right_box .right_text {
+    height: 560px;
 }
