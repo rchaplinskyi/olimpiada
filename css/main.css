@@ -292,21 +292,21 @@ a {
         margin-right: 50px;
     }
     .offer_text span {
-        font-size: 40px;
+        font-size: 39px;
     }
     .offer_text h1 {
-        font-size: 63px;
+        font-size: 62px;
     }
     .item {
         width: auto;
-        margin-right: 20px;
+        margin-right: 10px;
     }
     .item:last-child {
         margin-right: 0;
     }
     .left_box img,
     .right_box img {
-        width: auto;
+        width: 580px;
     }
 }
 @media screen and (max-width:1024px) {
