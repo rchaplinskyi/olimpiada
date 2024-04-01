@@ -60,10 +60,10 @@ a {
 }
 .offer {
     display: flex;
-    justify-content: space-between;
-    padding-top: 125px;
-    
-}
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 25px;
+ }
 .offer_text {
     position: relative;
     z-index: 99;
@@ -113,11 +113,12 @@ a {
     line-height: 1.35em;
 }
 .offer_hero {
-    max-width: 50%;
-}
-.offer_hero img {
-    height: 600px;
-    text-align: center;
+    background-image: url(../assets/hero4.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 670px;
+    height: 795px;
 }
 
 /*Друга секція*/
@@ -129,10 +130,7 @@ a {
 .right_box h2 {
     text-align: center;
 }
-.left_box .left_text,
-.right_box .right_text {
-    height: 560px;
-}
+
 .left_text,
 .right_text {
     padding: 45px 25px;
@@ -144,8 +142,8 @@ a {
     margin-left: 50px;
 }
 .left_text blockquote {
-    margin-top: 25px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 /*Третя секція*/
 .tornament {
@@ -311,6 +309,10 @@ a {
     .offer_text h1 {
         font-size: 62px;
     }
+    .offer_hero {
+        width: 670px;
+        height: 680px;
+    }
     .item {
         width: auto;
         margin-right: 10px;
@@ -344,16 +346,25 @@ a {
     .offer_text p {
         font-size: 18px;
     }
-    .offer_hero img {
-        height: 470px;
-    } 
+    .offer_hero {
+        width: 634px;
+        height: 540px;
+        
+    }
     .offer_box {
         flex-direction: column;
         align-items: center;
          gap: 25px;
-    }   
+    }  
+    .right_box,
+    .left_box {
+        text-align: center;
+    } 
     .right_box {
         order: -1;
+    }
+    .left_box .btn {
+        margin: 0 auto;
     }
     .heading {
         text-align: center;
@@ -407,6 +418,7 @@ a {
     .offer {
         flex-direction: column;
         gap: 55px;
+        padding-top: 150px;
     }
     .offer_text {
         width: 100%;
@@ -441,6 +453,15 @@ a {
         align-items: center;
     }
 
+}
+@media screen and (max-width:700px) {
+    .offer_text span {
+        font-size: 39px;
+    }
+    .offer_text h1 {
+        font-size: 62px;
+    }
+    
 }
 @media screen and (max-width:680px) {
     .offer_text span {
@@ -499,8 +520,8 @@ a {
         top:-40px;
         left: 205px;
     }
-    .offer_hero img {
-        height: 380px;
+    .offer_hero {
+        width: 500px;
     }
     .faq h2::before {
         left: 28%;
@@ -526,8 +547,8 @@ a {
         top:-40px;
         left: 180px;
     }
-    .offer_hero img {
-        height: 325px;
+    .offer_hero {
+        width: 455px;
     }
 }
 @media screen and (max-width: 425px) {
@@ -563,8 +584,8 @@ a {
     .right_box .right_img {
         width: 370px;
     }
-    .offer_hero img {
-        height: 275px;
+    .offer_hero {
+        width: 400px;
     }
 }
 @media screen and (max-width: 375px) {
@@ -576,6 +597,9 @@ a {
     }
     .offer_text p {
         font-size: 13px;
+    }
+    .offer_hero {
+        width: 350px;
     }
     .circle {
         left: 25px;
@@ -645,8 +669,8 @@ a {
     .offer_text .btn {
         width: 100%;
     }
-    .offer_hero img {
-        height: 200px;
+    .offer_hero {
+        width: 340px;
     }
     .faq h2::before {
         left: 14%;
