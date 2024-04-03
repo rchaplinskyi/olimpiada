@@ -82,13 +82,13 @@ a {
     position: absolute;
     width: 242px;
     height: 225px;
-    left: 515px;
-    top: -15px;
+    left: 505px;
+    top: -30px;
     background-image: url("../assets/dotted-circle.png");
     z-index: -3;
 }
 .offer_text span {
-    font-size: 42px;
+    font-size: clamp(0.88rem, calc(0.49rem + 1.94vw), 2.81rem);
     font-weight: 900;
 }
 .offer_text span::before {
@@ -100,11 +100,12 @@ a {
     width: 230px;
 }
 .offer_text h1 {
-    font-size: 65px;
+    font-size: clamp(1.44rem, calc(0.91rem + 2.63vw), 4.06rem);
     text-transform: uppercase;
     color: #EEFF2C;
     font-weight: 900;
     line-height: 1.35em;
+    letter-spacing: 0.06em;
 }
 .offer_text p {
     font-size: 23px;
@@ -139,7 +140,7 @@ a {
     text-align: justify;
 }
 .left_text ul {
-    list-style: square;
+    list-style: disc;
     margin-left: 50px;
 }
 .left_text blockquote {
@@ -288,6 +289,10 @@ a {
     font-size: 25px;
     padding-right: 20px;
 }
+.footer_about .social a:hover {
+    color:#F24080;
+    transition: all 0.3s ease;
+}
 .footer_adress li,
 .footer_info li {
     padding: 10px 0;
@@ -304,12 +309,12 @@ a {
         margin-left: 50px;
         margin-right: 50px;
     }
-    .offer_text span {
+    /* .offer_text span {
         font-size: 39px;
     }
     .offer_text h1 {
         font-size: 62px;
-    }
+    } */
     .offer_hero {
         width: 670px;
         height: 680px;
@@ -330,12 +335,12 @@ a {
    body {
     font-size: 16px;
    }
-    .offer_text span {
+    /* .offer_text span {
         font-size: 30px;
     }
     .offer_text h1 {
         font-size: 47px;
-    }
+    } */
     .circle {
         left: 304px;
         top: -105px;
@@ -384,12 +389,12 @@ a {
     
 }
 @media screen and (max-width: 980px) {
-    .offer_text span {
+    /* .offer_text span {
         font-size: 25px;
     }
     .offer_text h1 {
         font-size: 40px;
-    }
+    } */
     .offer_hero img {
         height: 450px;
     }
@@ -425,12 +430,12 @@ a {
         width: 100%;
         text-align: center;
     }
-    .offer_text span {
+    /* .offer_text span {
         font-size: 40px;
     }
     .offer_text h1 {
         font-size: 63px;
-    }
+    } */
     .offer_text p {
         width: 100%;
     }
@@ -456,21 +461,21 @@ a {
 
 }
 @media screen and (max-width:700px) {
-    .offer_text span {
+    /* .offer_text span {
         font-size: 39px;
     }
     .offer_text h1 {
         font-size: 62px;
-    }
+    } */
     
 }
 @media screen and (max-width:680px) {
-    .offer_text span {
+    /* .offer_text span {
         font-size: 35px;
     }
     .offer_text h1 {
         font-size: 55px;
-    }
+    } */
     .dottet_circle {
         left: 350px;
     }
@@ -504,12 +509,12 @@ a {
         width: 100%;
         margin: 0 auto;
     }
-    .offer_text span {
+    /* .offer_text span {
         font-size: 28px;
     }
     .offer_text h1 {
         font-size: 44px;
-    }
+    } */
     .offer_text span::before {
         top: -50px;
         left: 20%;
@@ -532,12 +537,12 @@ a {
     }
 }
 @media screen and (max-width: 500px) {
-    .offer_text span {
+    /* .offer_text span {
         font-size: 25px;
     }
     .offer_text h1 {
         font-size: 40px;
-    }
+    } */
     .offer_text p {
         font-size: 16px;
     }
@@ -553,12 +558,12 @@ a {
     }
 }
 @media screen and (max-width: 425px) {
-    .offer_text span {
+    /* .offer_text span {
         font-size: 19px;
     }
     .offer_text h1 {
         font-size: 31px;
-    }
+    } */
     .offer_text p {
         font-size: 15px;
     }
@@ -590,12 +595,12 @@ a {
     }
 }
 @media screen and (max-width: 375px) {
-    .offer_text span {
+    /* .offer_text span {
         font-size: 18px;
     }
     .offer_text h1 {
         font-size: 29px;
-    }
+    } */
     .offer_text p {
         font-size: 13px;
     }
@@ -648,12 +653,12 @@ a {
     }
 }
 @media screen and (max-width: 320px) {
-    .offer_text span {
+    /* .offer_text span {
         font-size: 14px;
     }
     .offer_text h1 {
         font-size: 23px;
-    }
+    } */
     .offer_text p {
         font-size: 12px;
     }
