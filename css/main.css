@@ -168,12 +168,21 @@ a {
 .right_box h2 {
     text-align: center;
 }
+.right_box,
+.left_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .left_text,
 .right_text {
     padding: 45px 25px;
     line-height: 1.55em;
     text-align: justify;
+}
+.left_text {
+    padding-bottom: 0;
 }
 .left_text ul,
 .right_text ul {
@@ -182,7 +191,7 @@ a {
 }
 .left_text blockquote {
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .motto {
 	font-weight:700;
@@ -359,9 +368,16 @@ a {
         width: 670px;
         height: 680px;
     }
+    .tornament_items {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
     .item {
-        width: auto;
+        width: 100%;
         margin-right: 10px;
+    }
+    .item p {
+        width: auto;
     }
     .item:last-child {
         margin-right: 0;
@@ -400,7 +416,7 @@ a {
     .offer_box {
         flex-direction: column;
         align-items: center;
-         gap: 25px;
+        gap: 25px;
     }  
     .right_box,
     .left_box {
