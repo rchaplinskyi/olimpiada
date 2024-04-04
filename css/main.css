@@ -175,13 +175,17 @@ a {
     line-height: 1.55em;
     text-align: justify;
 }
-.left_text ul {
+.left_text ul,
+.right_text ul {
     list-style: disc;
     margin-left: 50px;
 }
 .left_text blockquote {
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.motto {
+	font-weight:700;
 }
 /*Третя секція*/
 .tornament {
