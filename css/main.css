@@ -144,7 +144,7 @@ a {
     letter-spacing: 0.06em;
 }
 .offer_text p {
-    font-size: 23px;
+    font-size: 18px;
     padding-top: 30px;
     padding-bottom: 90px;
     width: 586px;
@@ -186,8 +186,19 @@ a {
 }
 .left_text ul,
 .right_text ul {
-    list-style: disc;
-    margin-left: 50px;
+    margin-left: 25px;
+}
+.left_text ul > li,
+.right_text ul > li {
+    list-style-type: none;
+}
+.left_text ul > li::before,
+.right_text ul > li::before {
+    font-family: fontawesome;
+    content: "\f00c";
+    color: #F24080;
+    font-size: 12px;
+    padding-right: 10px;
 }
 .left_text blockquote {
     margin-top: 20px;
@@ -230,6 +241,76 @@ a {
     margin-top: 100px;
     margin-bottom: 100px;
 }
+/*Умови проведення*/
+.ymovu {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    background-image: url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding: 115px 0;    
+}
+.ymovu h2 {
+    position: relative;
+    width: 470px;
+    color:#fff;
+    line-height: 1.20em;
+}
+.ymovu_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.ymovu_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 55%;
+}
+.ymovu_text p {
+    color:#fff;
+    font-size:18px;
+    line-height: 1.35em;
+}
+.ymovu h2::before {
+    content: url("../assets/vawe.png");
+    display: block;
+    position: absolute; 
+    top: -45px;
+    left: 0;
+}
+.ymovu_price {
+    display: flex;
+    justify-content: space-between;
+    width: 45%;
+}
+.price {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 185px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align: center;
+    padding: 0 15px;
+    font-size: 26px;
+    font-weight: 700;
+    height: 223px;
+}
+.price p {
+    margin-bottom: 10px;
+    font-size: 32px;
+}
+.price h3 {
+    margin-bottom: 10px;
+}
+.price h4 {
+    color: #F24080;
+    font-size: 30px;
+}
+
 /*Четверта секція*/
 .faq {
     position: relative;
@@ -242,10 +323,11 @@ a {
     content: url("../assets/vawe.png");
     display: block;
     position: absolute; 
-    top: -40px;
+    top: -45px;
     left: 41%;
     width: 230px;
 }
+
 /*Акордеон*/
 .acor-container {
     max-width: 860px;
@@ -358,12 +440,6 @@ a {
         margin-left: 50px;
         margin-right: 50px;
     }
-    /* .offer_text span {
-        font-size: 39px;
-    }
-    .offer_text h1 {
-        font-size: 62px;
-    } */
     .offer_hero {
         width: 670px;
         height: 680px;
@@ -386,17 +462,31 @@ a {
     .right_box img {
         width: 580px;
     }
+    .ymovu h2 {
+        text-align: center;
+        width: 100%;
+    }
+    .ymovu h2::before {
+        left: 40%;
+    }
+    .ymovu_items {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ymovu_text {
+        text-align: center;
+        width: 100%;
+    }
+    .ymovu_price {
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
 }
 @media screen and (max-width:1024px) {
    body {
     font-size: 16px;
    }
-    /* .offer_text span {
-        font-size: 30px;
-    }
-    .offer_text h1 {
-        font-size: 47px;
-    } */
     .circle {
         left: 304px;
         top: -105px;
@@ -445,12 +535,7 @@ a {
     
 }
 @media screen and (max-width: 980px) {
-    /* .offer_text span {
-        font-size: 25px;
-    }
-    .offer_text h1 {
-        font-size: 40px;
-    } */
+
     .offer_hero img {
         height: 450px;
     }
@@ -486,12 +571,6 @@ a {
         width: 100%;
         text-align: center;
     }
-    /* .offer_text span {
-        font-size: 40px;
-    }
-    .offer_text h1 {
-        font-size: 63px;
-    } */
     .offer_text p {
         width: 100%;
     }
@@ -505,6 +584,17 @@ a {
     .offer_hero img {
         height: 550px;
     }
+    .ymovu h2::before {
+        left: 30%;
+    }
+    .ymovu_text p {
+        font-size: 16px;
+    }
+    .ymovu_price {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
     .faq h2::before {
         top: -40px;
         left: 34%;
@@ -516,22 +606,8 @@ a {
     }
 
 }
-@media screen and (max-width:700px) {
-    /* .offer_text span {
-        font-size: 39px;
-    }
-    .offer_text h1 {
-        font-size: 62px;
-    } */
-    
-}
+
 @media screen and (max-width:680px) {
-    /* .offer_text span {
-        font-size: 35px;
-    }
-    .offer_text h1 {
-        font-size: 55px;
-    } */
     .dottet_circle {
         left: 350px;
     }
@@ -565,12 +641,6 @@ a {
         width: 100%;
         margin: 0 auto;
     }
-    /* .offer_text span {
-        font-size: 28px;
-    }
-    .offer_text h1 {
-        font-size: 44px;
-    } */
     .offer_text span::before {
         top: -50px;
         left: 20%;
@@ -593,33 +663,34 @@ a {
     }
 }
 @media screen and (max-width: 500px) {
-    /* .offer_text span {
-        font-size: 25px;
+    .heading {
+        font-size: 30px;
     }
-    .offer_text h1 {
-        font-size: 40px;
-    } */
     .offer_text p {
         font-size: 16px;
     }
     .circle {
-        left: 130px;
+        left: 85px;
     }
     .dottet_circle {
         top:-40px;
-        left: 180px;
+        left: 130px;
     }
     .offer_hero {
         width: 455px;
     }
+    .left_box .left_img, 
+    .right_box .right_img {
+        width: 400px;
+    }
+    .ymovu h2::before {
+        left: 15%;
+    }
+    .faq h2::before {
+        left: 23%;
+    }
 }
 @media screen and (max-width: 425px) {
-    /* .offer_text span {
-        font-size: 19px;
-    }
-    .offer_text h1 {
-        font-size: 31px;
-    } */
     .offer_text p {
         font-size: 15px;
     }
@@ -634,10 +705,13 @@ a {
         left: 95px;
     }
     .heading {
-        font-size: 30px;
+        font-size: 27px;
+    }
+    .ymovu h2::before {
+        left: 10%;
     }
     .faq h2::before {
-        left: 23%;
+        left: 20%;
     }
     .acor-container label {
         font-size: 14px;
@@ -651,12 +725,7 @@ a {
     }
 }
 @media screen and (max-width: 375px) {
-    /* .offer_text span {
-        font-size: 18px;
-    }
-    .offer_text h1 {
-        font-size: 29px;
-    } */
+
     .offer_text p {
         font-size: 13px;
     }
@@ -709,12 +778,6 @@ a {
     }
 }
 @media screen and (max-width: 320px) {
-    /* .offer_text span {
-        font-size: 14px;
-    }
-    .offer_text h1 {
-        font-size: 23px;
-    } */
     .offer_text p {
         font-size: 12px;
     }
