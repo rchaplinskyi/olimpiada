@@ -295,13 +295,16 @@ a {
     border-radius: 15px;
     text-align: center;
     padding: 0 15px;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
     height: 223px;
 }
 .price p {
     margin-bottom: 10px;
-    font-size: 32px;
+    font-size: 25px;
+}
+.price .fake {
+    color: #fff;
 }
 .price h3 {
     margin-bottom: 10px;
